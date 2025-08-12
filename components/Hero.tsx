@@ -18,7 +18,7 @@ export default function Hero() {
   }
 
   return (
-    <div className="relative w-full h-full flex items-center justify-center overflow-hidden bg-gradient-dark">
+    <div className="relative w-full h-full flex items-start md:items-center justify-center overflow-hidden bg-gradient-dark">
       {/* Clean Luxury Animation Background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-primary-950 via-primary-900 to-primary-950" />
@@ -121,11 +121,11 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-sans font-bold mb-6 leading-tight tracking-tight text-white">
+      <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto pt-28 md:pt-0">
+        <h1 className="text-3xl sm:text-5xl lg:text-7xl font-sans font-bold mb-6 leading-tight tracking-tight text-white">
           MAYFAIR HOTELS & RESORTS
         </h1>
-        <p className="text-xl sm:text-2xl lg:text-3xl mb-8 text-primary-200 font-sans font-medium">
+        <p className="text-lg sm:text-2xl lg:text-3xl mb-8 text-primary-200 font-sans font-medium">
           A Beacon of Heartfelt Hospitality
         </p>
 
