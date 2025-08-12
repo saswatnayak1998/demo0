@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Single font for the entire website - Major Mono Display for all text elements */
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-primary-900 bg-primary-50;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-semibold text-primary-950;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-800 hover:bg-primary-900 text-white font-medium px-6 py-3 rounded-lg transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply bg-primary-100 hover:bg-primary-200 text-primary-900 font-medium px-6 py-3 rounded-lg border border-primary-300 transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  }
+
+  .btn-accent {
+    @apply bg-primary-500 hover:bg-primary-600 text-white font-medium px-6 py-3 rounded-lg transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1;
+  }
+
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  /* Card reveal animations */
+  .card-reveal {
+    @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+  }
+
+  .card-reveal.revealed {
+    @apply opacity-100 translate-y-0;
+  }
+
+  /* Smooth section transitions */
+  .section-card {
+    @apply min-h-screen flex items-center justify-center px-4 py-20;
+  }
+
+  .section-card-content {
+    @apply w-full max-w-6xl;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary-800 to-primary-600 bg-clip-text text-transparent;
+  }
+
+  .bg-gradient-primary {
+    @apply bg-gradient-to-br from-primary-50 via-white to-primary-100;
+  }
+
+  .bg-gradient-dark {
+    @apply bg-gradient-to-br from-primary-950 via-primary-900 to-primary-950;
+  }
+
+  .bg-gradient-earth {
+    @apply bg-gradient-to-br from-primary-100 via-primary-50 to-white;
+  }
+
+  /* Scroll reveal utilities */
+  .scroll-reveal {
+    @apply transition-all duration-1000 ease-out;
+  }
+
+  .scroll-reveal.from-bottom {
+    @apply translate-y-16 opacity-0;
+  }
+
+  .scroll-reveal.from-bottom.revealed {
+    @apply translate-y-0 opacity-100;
+  }
+
+  .scroll-reveal.from-left {
+    @apply -translate-x-16 opacity-0;
+  }
+
+  .scroll-reveal.from-left.revealed {
+    @apply translate-x-0 opacity-100;
+  }
+
+  .scroll-reveal.from-right {
+    @apply translate-x-16 opacity-0;
+  }
+
+  .scroll-reveal.from-right.revealed {
+    @apply translate-x-0 opacity-100;
+  }
+
+  .scroll-reveal.scale-in {
+    @apply scale-95 opacity-0;
+  }
+
+  .scroll-reveal.scale-in.revealed {
+    @apply scale-100 opacity-100;
+  }
+} 
