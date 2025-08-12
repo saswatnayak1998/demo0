@@ -45,19 +45,19 @@ export default function Header() {
 
       {/* Main Header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between py-4">
+        <div className="flex items-center justify-between py-3">
           {/* Logo */}
-          <div className="flex items-center">
-            <div className="text-2xl font-sans font-bold text-primary-900">
+          <div className="flex items-center flex-1 min-w-0">
+            <div className="text-xl sm:text-2xl font-sans font-bold text-primary-900 truncate">
               MAYFAIR
             </div>
-            <div className="ml-2 text-sm text-primary-700 font-sans">
+            <div className="ml-2 text-sm text-primary-700 font-sans hidden sm:block truncate">
               HOTELS & RESORTS
             </div>
           </div>
 
           {/* Right Controls: CTAs + Burger */}
-          <div className="flex items-center gap-2 sm:gap-3">
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
             {/* Compact CTAs on small screens */}
             <button className="inline-flex md:hidden px-3 py-2 rounded-lg border border-primary-300 text-primary-800 hover:bg-primary-50 transition-colors font-sans text-sm" aria-label="Sign In">
               Sign In
