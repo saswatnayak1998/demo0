@@ -44,11 +44,11 @@ export default function Header() {
       </div>
 
       {/* Main Header */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-3">
           {/* Logo */}
           <div className="flex items-center flex-1 min-w-0">
-            <div className="text-xl sm:text-2xl font-sans font-bold text-primary-900 truncate">
+            <div className="text-lg sm:text-2xl font-sans font-bold text-primary-900 truncate">
               MAYFAIR
             </div>
             <div className="ml-2 text-sm text-primary-700 font-sans hidden sm:block truncate">
@@ -57,12 +57,12 @@ export default function Header() {
           </div>
 
           {/* Right Controls: CTAs + Burger */}
-          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+          <div className="flex items-center gap-1 sm:gap-3 shrink-0">
             {/* Compact CTAs on small screens */}
-            <button className="inline-flex md:hidden px-3 py-2 rounded-lg border border-primary-300 text-primary-800 hover:bg-primary-50 transition-colors font-sans text-sm" aria-label="Sign In">
-              Sign In
+            <button className="inline-flex md:hidden px-2 py-1 rounded-md border border-primary-300 text-primary-800 hover:bg-primary-50 transition-colors font-sans text-xs" aria-label="Sign In">
+              Sign
             </button>
-            <button className="inline-flex md:hidden px-3 py-2 rounded-lg bg-primary-800 hover:bg-primary-900 text-white transition-colors font-sans text-sm" aria-label="Book Now">
+            <button className="inline-flex md:hidden px-2 py-1 rounded-md bg-primary-800 hover:bg-primary-900 text-white transition-colors font-sans text-xs" aria-label="Book Now">
               Book
             </button>
 
